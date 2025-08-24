@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header thingy -->
+<HEADER>
+    <h1 style="color: #ff4500; background-color: #ffff99;">
+        Basic Calculator FOR Demo
+    </h1>
+    <p style="color: #0066cc; background-color: #ccffcc;">
+        click buttons to do some maths ...
+    </p>
+</HEADER>
+
+
+<!-- main container  that is  -->
+<main class="calc-container">
+
+    <!-- is it display screen -->
+    <div class="display" id="display"> 0 </div>
+
+    <!-- forr buttons -->
+    <div class="buttons">
+        <button class="btn" onclick="press('7')">7</button>
+        <button class="btn" onclick="press('8')">8</button>
+        <button class="btn" onclick="press('9')">9</button>
+        <button class="btn operator" onclick="press('/')">/</button>
+
+        <button class="btn" onclick="press('4')">4</button>
+        <button class="btn" onclick="press('5')">5</button>
+        <button class="btn" onclick="press('6')">6</button>
+        <button class="btn operator" onclick="press('*')">x</button>
+
+        <button class="btn" onclick="press('1')">1</button>
+        <button class="btn" onclick="press('2')">2</button>
+        <button class="btn" onclick="press('3')">3</button>
+        <button class="btn operator" onclick="press('-')">-</button>
+
+        <button class="btn" onclick="press('0')">0</button>
+        <button class="btn" onclick="press('.')">.</button>
+        <button class="btn" onclick="calculate()">=</button>
+        <button class="btn operator" onclick="press('+')">+</button>
+
+        <button class="btn clear" onclick="clearDisplay()">C</button>
+    </div>
+
+</main>
+
+<!-- js script -->
+<script src="calcscript.js"></script>
+</body>
+</html>

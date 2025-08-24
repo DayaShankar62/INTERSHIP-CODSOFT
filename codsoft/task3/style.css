@@ -1,0 +1,54 @@
+/* some basic style i guess */
+body {
+    background-color: #f0f0f0;
+    font-family: arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+calc-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.display {
+    background-color: white;
+    padding: 20px;
+    text-align: right;
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 10px;
+}
+
+.btn{
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.btn:hover{
+    background-color: #ddd;
+}
+
+.operator{
+    background-color: #008cff;
+    color:white;
+}
+
+.clear{
+    grid-column: span 4;
+    background-color: rgb(255, 174, 0);
+    color:white;
+}
